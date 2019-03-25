@@ -1,16 +1,15 @@
-package edu.quinnipiac.ser210.chapter102;
+package edu.quinnipiac.ser210.chapter11;
 
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 
 /**
@@ -57,6 +56,15 @@ public class WorkoutDetailFragment extends Fragment {
         if(savedInstanceState!=null)
         {
             workoutId=savedInstanceState.getLong("workoutId");
+        }
+        else
+        {
+            StopwatchFragment stopwatchFragment=new StopwatchFragment();
+            FragmentTransaction ft=getChildFragmentManager().beginTransaction();
+            ft.add(R.id.stopwatch_container,stopwatchFragment);
+            ft.addToBackStack(null);
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+            ft.commit();
         }
 
     }

@@ -7,7 +7,7 @@
 
 
     <fragment
-        android:name="edu.quinnipiac.ser210.chapter102.WorkoutListFragment"
+        android:name="edu.quinnipiac.ser210.chapter11.WorkoutListFragment"
         android:id="@+id/list_frag"
         android:layout_width="0dp"
         android:layout_height="match_parent"

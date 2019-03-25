@@ -1,4 +1,4 @@
-package edu.quinnipiac.ser210.chapter102;
+package edu.quinnipiac.ser210.chapter11;
 
 public class Workout {
     private String name;

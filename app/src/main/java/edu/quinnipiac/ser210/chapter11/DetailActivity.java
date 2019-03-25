@@ -1,4 +1,4 @@
-package edu.quinnipiac.ser210.chapter102;
+package edu.quinnipiac.ser210.chapter11;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

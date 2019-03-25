@@ -5,4 +5,4 @@
         android:id="@+id/detail_frag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="edu.quinnipiac.ser210.chapter102.WorkoutDetailFragment"/>
+        android:name="edu.quinnipiac.ser210.chapter11.WorkoutDetailFragment"/>
